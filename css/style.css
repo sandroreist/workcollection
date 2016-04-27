@@ -1,0 +1,174 @@
+/* Tipps zu HTML Tags
+
+	section		Abschnitt der Webseite
+	article		Artikel in Webseite (z.B Überschrift, Text, Bild)
+	aside		Sidebar
+	footer		Fusszeile
+	main		Hauptinhalt der Webseite
+	figure		spezifischer Bildcontainer
+	figcaption	in "figure" drin = Bildunterschrift
+	
+	form		Formular
+	label		Zeile in Formular
+	input		beschreibbares Textfeld
+	
+	<blockquote> wird für Zitate verwendet
+	<cite>		wird in <blockquote> verwendet um den Autor anzugeben
+
+Fonts
+    font-family: Raleway;
+    font-weight: 300; (300, 400, 600, 700, 800)
+    font-style: italic;
+
+Tipps zu CSS
+
+	position: rlative; gleich wie wenn ohne position:, kann aber mit top & left ausgerichtet werden, ursprüngliche position bleibt dabei als leere Fläche
+	position: absolute; richtet sich nicht mehr nach Aufbau und kann mit top, left usw. positioniert werden, hat älteres Element positon:relative, richtet es sich nach dem
+	
+	
+*/
+
+/*************************************************************/
+/*Typography*/
+/*************************************************************/
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	font-weight: 800;
+	color: #6C8AA5;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	font-weight: 800;
+	color: #6C8AA5;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 21px;
+	font-weight: 800;
+	color: #6C8AA5;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	color: #6C8AA5;
+}
+
+/*************************************************************/
+/*Base CSS*/
+/*************************************************************/
+
+body {
+	background: #FFFFFF;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+
+	background: url(../img/bg.jpg) no-repeat center center fixed; 
+ 	 -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+
+header {
+	width: 100%;
+	position: relative;
+}
+
+.content{
+	width: 50%;
+	margin: 0 auto;
+	text-align: justify;
+} 
+
+.section {
+	margin: 0;
+	padding: 100px 0px;
+	width: 100%;
+}
+
+
+/*************************************************************/
+/*Navigation*/
+/*************************************************************/
+
+nav {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1);
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	border-bottom: 4px solid #6C8AA5;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 20px 5%;
+	padding: 25px 0;
+}
+
+nav li {
+	display: inline;
+	text-align: center;
+}
+
+nav a {
+	display: inline-block;
+	padding: 0px 10px;
+	text-decoration: none;
+    color: #6C8AA5;
+	font-family: Raleway;
+    font-weight: 700;
+}
+
+nav a:first-child {
+}
+
+nav a:last-child {
+}
+
+/*************************************************************/
+/*Content*/
+/*************************************************************/
+
+.section0 {
+	height: 100vh;
+}
+
+.section1 {
+	background-color: #ffffff;
+
+}
+
+
+/*************************************************************/
+/*Clearfix -> http://css-tricks.com/snippets/css/clear-fix/*/
+/*************************************************************/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Media Querys */
+
+@media screen and (max-width: 600px) {
+
+
+}
+
