@@ -80,6 +80,10 @@ body {
 header {
 	width: 100%;
 	position: relative;
+	top: 0;
+	padding: 20px 0px;
+	background-color: rgba(255, 255, 255, 1);
+	border-bottom: 4px solid #6C8AA5;
 }
 
 .content{
@@ -94,11 +98,22 @@ header {
 	width: 100%;
 }
 
+/*************************************************************/
+/*Header*/
+/*************************************************************/
+
+.menuicon {
+	color: #6C8AA5;
+	float: right;
+	width: 5%;
+	margin: 0 auto;
+	font-size: 28px;
+}
 
 /*************************************************************/
 /*Navigation*/
 /*************************************************************/
-
+/*
 nav {
 	width: 100%;
 	background-color: rgba(255, 255, 255, 1);
@@ -133,8 +148,66 @@ nav a:first-child {
 }
 
 nav a:last-child {
+}*/
+
+
+
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #ffffff;
+	position: fixed;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
+.cbp-spmenu h3 {
+	color: #6C8AA5;
+	font-size: 28px;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #ffffff;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #6C8AA5;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+	background: #ffffff;
+}
+
+.cbp-spmenu a:active {
+	background: #ffffff;
+	color: #6C8AA5;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 99;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #6C8AA5;
+	padding: 1em;
+}
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
 /*************************************************************/
 /*Content*/
 /*************************************************************/
@@ -170,5 +243,19 @@ nav a:last-child {
 @media screen and (max-width: 600px) {
 
 
+}
+
+
+/*Menu responsive*/
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
 }
 

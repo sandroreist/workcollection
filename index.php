@@ -11,6 +11,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
         <!--<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
         <link rel="stylesheet" href="css/font.css" type="text/css" media="screen">
@@ -27,16 +28,30 @@
 
 
 	<body>
-			
-		<header>
-			<nav>
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+          <h3>Menu</h3>
+          <a href="#">Celery seakale</a>
+          <a href="#">Dulse daikon</a>
+          <a href="#">Zucchini garlic</a>
+          <a href="#">Catsear azuki bean</a>
+          <a href="#">Dandelion bunya</a>
+          <a href="#">Rutabaga</a>
+      </nav>
+
+
+		<header class="clearfix">
+			<!--<nav>
 				<ul class="clearfix">
 					<li><a href="#">Navigationspunkt 1</a></li>
 					<li><a href="#">Navigationspunkt 2</a></li>
 					<li><a href="#">Navigationspunkt 3</a></li>
 					<li><a href="#">Navigationspunkt 4</a></li>
 				</ul>
-			</nav>
+			</nav>-->
+
+      <i id="showRight" class="fa fa-bars menuicon" aria-hidden="true"></i>
+
+      
   	</header>
 
       <div class="section0">
@@ -52,6 +67,24 @@
 		
 		
 		
+      <script>
+        var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+            showRight = document.getElementById( 'showRight' ),
+            body = document.body;
+      
+        showRight.onclick = function() {
+          classie.toggle( this, 'active' );
+          classie.toggle( menuRight, 'cbp-spmenu-open' );
+          disableOther( 'showRight' );
+        };
+      
+        function disableOther( button ) {
+          
+          if( button !== 'showRight' ) {
+            classie.toggle( showRight, 'disabled' );
+          }   
+        }
+      </script>
 
 		
 
