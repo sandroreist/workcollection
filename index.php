@@ -26,19 +26,7 @@
         <![endif]-->
 	</head>
 
-
-	<body>
-			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-          <h3>Menu</h3>
-          <a href="#">Celery seakale</a>
-          <a href="#">Dulse daikon</a>
-          <a href="#">Zucchini garlic</a>
-          <a href="#">Catsear azuki bean</a>
-          <a href="#">Dandelion bunya</a>
-          <a href="#">Rutabaga</a>
-      </nav>
-
-
+  <body>
 		<header class="clearfix">
 			<!--<nav>
 				<ul class="clearfix">
@@ -49,44 +37,80 @@
 				</ul>
 			</nav>-->
 
-      <i id="showRight" class="fa fa-bars menuicon" aria-hidden="true"></i>
-
-      
+      <!--<i id="showRight" class="fa fa-bars menuicon" aria-hidden="true"></i>-->
+      <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
   	</header>
+
+    <main class="cd-main-content">
 
       <div class="section0">
       </div>
 
-  		<div class="section section1">
-  			<div class="content">
+      <div class="section section1">
+        <div class="content">
           <h1>Sandro Reist</h1>
-  				<p>Ich heisse Sandro und bin Mediamatiker im ZEM. Dies soll mein eigenes Wordpress-Template werden, da ich sowieso mal ein eigenes machen möchte. Cool. </p>
-  			</div>
-  		</div>
+          <p>Ich heisse Sandro und bin Mediamatiker im ZEM. Dies soll mein eigenes Wordpress-Template werden, da ich sowieso mal ein eigenes machen möchte. Cool. </p>
+        </div>
+      </div>
 
-		
-		
-		
-      <script>
-        var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-            showRight = document.getElementById( 'showRight' ),
-            body = document.body;
+    </main>
       
-        showRight.onclick = function() {
-          classie.toggle( this, 'active' );
-          classie.toggle( menuRight, 'cbp-spmenu-open' );
-          disableOther( 'showRight' );
-        };
-      
-        function disableOther( button ) {
-          
-          if( button !== 'showRight' ) {
-            classie.toggle( showRight, 'disabled' );
-          }   
-        }
-      </script>
+        <nav id="cd-lateral-nav">
+          <ul class="cd-navigation">
+            <li class="item-has-children">
+              <a href="#0">Services</a>
+              <ul class="sub-menu">
+                <li><a href="#0">Brand</a></li>
+                <li><a href="#0">Web Apps</a></li>
+                <li><a href="#0">Mobile Apps</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
 
-		
+            <li class="item-has-children">
+              <a href="#0">Products</a>
+              <ul class="sub-menu">
+                <li><a href="#0">Product 1</a></li>
+                <li><a href="#0">Product 2</a></li>
+                <li><a href="#0">Product 3</a></li>
+                <li><a href="#0">Product 4</a></li>
+                <li><a href="#0">Product 5</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+
+            <li class="item-has-children">
+              <a href="#0">Stockists</a>
+              <ul class="sub-menu">
+                <li><a href="#0">London</a></li>
+                <li><a href="#0">New York</a></li>
+                <li><a href="#0">Milan</a></li>
+                <li><a href="#0">Paris</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+          </ul> <!-- cd-navigation -->
+
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a href="#0">Tour</a></li>
+            <li><a href="#0">Login</a></li>
+            <li><a href="#0">Register</a></li>
+            <li><a href="#0">Pricing</a></li>
+            <li><a href="#0">Support</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a class="current" href="#0">Journal</a></li>
+            <li><a href="#0">FAQ</a></li>
+            <li><a href="#0">Terms &amp; Conditions</a></li>
+            <li><a href="#0">Careers</a></li>
+            <li><a href="#0">Students</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <div class="cd-navigation socials">
+            <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
+            <a class="cd-github cd-img-replace" href="#0">Git Hub</a>
+            <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+            <a class="cd-google cd-img-replace" href="#0">Google Plus</a>
+          </div> <!-- socials -->
+        </nav>
 
 	</body>
 </html>
