@@ -98,20 +98,20 @@ main {
 }
 .cd-main-content.lateral-menu-is-open {
   /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
-  -webkit-transform: translateX(-260px);
-  -moz-transform: translateX(-260px);
-  -ms-transform: translateX(-260px);
-  -o-transform: translateX(-260px);
-  transform: translateX(-260px);
+  -webkit-transform: translateX(-220px);
+  -moz-transform: translateX(-220px);
+  -ms-transform: translateX(-220px);
+  -o-transform: translateX(-220px);
+  transform: translateX(-220px);
 }
 
 
 header {
 	width: 100%;
-	position: relative;
+	position: fixed;
 	top: 0;
-	z-index: 101;
-	padding: 21px 0px;
+	z-index: 999;
+	padding: 28px 0px;
 	background-color: rgba(255, 255, 255, 1);
 	border-bottom: 4px solid #6C8AA5;
 
@@ -128,11 +128,11 @@ header {
 
 header.lateral-menu-is-open {
   /* translate to show the lateral menu */
-  -webkit-transform: translateX(-260px);
-  -moz-transform: translateX(-260px);
-  -ms-transform: translateX(-260px);
-  -o-transform: translateX(-260px);
-  transform: translateX(-260px);
+  -webkit-transform: translateX(-220px);
+  -moz-transform: translateX(-220px);
+  -ms-transform: translateX(-220px);
+  -o-transform: translateX(-220px);
+  transform: translateX(-220px);
 }
 
 .content{
@@ -172,14 +172,15 @@ header.lateral-menu-is-open {
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: #ffffff;
 }
 #cd-menu-trigger .cd-menu-text {
-  height: 100%;
+ 
   text-transform: uppercase;
   color: #6C8AA5;
   font-weight: 600;
   display: none;
+  position: absolute;
+  top: 34%;
 }
 #cd-menu-trigger .cd-menu-icon {
   /* this span is the central line in the menu menu */
@@ -242,7 +243,6 @@ header.lateral-menu-is-open {
   }
   #cd-menu-trigger .cd-menu-text {
     display: inline-block;
-    line-height: 70px;
   }
   #cd-menu-trigger .cd-menu-icon {
     left: auto;
@@ -263,8 +263,8 @@ header.lateral-menu-is-open {
   visibility: hidden;
   /* the secondary navigation is covered by the main element */
   z-index: 1;
-  width: 260px;
-  background-color: #242e30;
+  width: 220px;
+  background-color: #2A3540;
   overflow-y: auto;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -289,9 +289,15 @@ header.lateral-menu-is-open {
 #cd-lateral-nav a {
   display: block;
   line-height: 2em;
-  padding: 0 16px 0 32px;
+  padding: 0 16px 0 0;
   color: #aab5b7;
+  text-decoration: none;
 }
+
+#cd-lateral-nav a:hover{
+  color: #ffffff;
+}
+
 #cd-lateral-nav a.current {
   background-color: #3a4a4d;
   color: #FFF;
@@ -299,11 +305,16 @@ header.lateral-menu-is-open {
 .no-touch #cd-lateral-nav a:hover {
   color: #FFF;
 }
+
+
+
 @media only screen and (min-width: 768px) {
   #cd-lateral-nav .cd-navigation {
     margin: 20px 0;
   }
 }
+
+
 #cd-lateral-nav.lateral-menu-is-open {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -323,6 +334,7 @@ header.lateral-menu-is-open {
   position: relative;
   text-transform: uppercase;
   font-weight: 600;
+  
   /* this is the right arrow to show that the item has a submenu  */
 }
 #cd-lateral-nav .item-has-children > a::after {
@@ -354,54 +366,18 @@ header.lateral-menu-is-open {
   -ms-transform: translateY(-50%) rotate(90deg);
   -o-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
+
+  list-style-type: none;
 }
 
-#cd-lateral-nav .socials {
-  padding: 0 32px;
-}
-#cd-lateral-nav .socials:after {
+#cd-lateral-nav:after {
   content: "";
   display: table;
   clear: both;
 }
-#cd-lateral-nav .socials a {
-  height: 32px;
-  width: 32px;
-  float: left;
-  padding: 0;
-  background-image: url("../img/cd-socials.svg");
-  background-repeat: no-repeat;
-  background-size: 128px 64px;
-  background-color: #FFF;
-  margin-right: .5em;
-  border-radius: 0.25em;
-}
-#cd-lateral-nav .socials a.cd-twitter {
-  background-position: 0 0;
-}
-#cd-lateral-nav .socials a.cd-github {
-  background-position: -32px 0;
-}
-#cd-lateral-nav .socials a.cd-facebook {
-  background-position: -64px 0;
-}
-#cd-lateral-nav .socials a.cd-google {
-  background-position: -96px 0;
-}
-.no-touch #cd-lateral-nav .socials a:hover {
-  background-color: #4e6361;
-}
-.no-touch #cd-lateral-nav .socials a:hover.cd-twitter {
-  background-position: 0 -32px;
-}
-.no-touch #cd-lateral-nav .socials a:hover.cd-github {
-  background-position: -32px -32px;
-}
-.no-touch #cd-lateral-nav .socials a:hover.cd-facebook {
-  background-position: -64px -32px;
-}
-.no-touch #cd-lateral-nav .socials a:hover.cd-google {
-  background-position: -96px -32px;
+
+ol, ul {
+    list-style: none;
 }
 /*
 nav {

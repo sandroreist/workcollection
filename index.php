@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
         <!--<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
         <link rel="stylesheet" href="css/font.css" type="text/css" media="screen">
@@ -88,28 +89,23 @@
             </li> <!-- item-has-children -->
           </ul> <!-- cd-navigation -->
 
+          <!--
           <ul class="cd-navigation cd-single-item-wrapper">
             <li><a href="#0">Tour</a></li>
             <li><a href="#0">Login</a></li>
             <li><a href="#0">Register</a></li>
             <li><a href="#0">Pricing</a></li>
             <li><a href="#0">Support</a></li>
-          </ul> <!-- cd-single-item-wrapper -->
+          </ul> --> <!-- cd-single-item-wrapper -->
 
-          <ul class="cd-navigation cd-single-item-wrapper">
+          <!--<ul class="cd-navigation cd-single-item-wrapper">
             <li><a class="current" href="#0">Journal</a></li>
             <li><a href="#0">FAQ</a></li>
             <li><a href="#0">Terms &amp; Conditions</a></li>
             <li><a href="#0">Careers</a></li>
             <li><a href="#0">Students</a></li>
-          </ul> <!-- cd-single-item-wrapper -->
+          </ul> --> <!-- cd-single-item-wrapper -->
 
-          <div class="cd-navigation socials">
-            <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-            <a class="cd-github cd-img-replace" href="#0">Git Hub</a>
-            <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
-            <a class="cd-google cd-img-replace" href="#0">Google Plus</a>
-          </div> <!-- socials -->
         </nav>
 
 	</body>
