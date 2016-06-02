@@ -85,7 +85,7 @@ main {
   position: relative;
   background-color: #6C8AA5;
   z-index: 101;
-  padding-top: 50px;
+  
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -98,11 +98,11 @@ main {
 }
 .cd-main-content.lateral-menu-is-open {
   /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
-  -webkit-transform: translateX(-220px);
-  -moz-transform: translateX(-220px);
-  -ms-transform: translateX(-220px);
-  -o-transform: translateX(-220px);
-  transform: translateX(-220px);
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px);
 }
 
 
@@ -128,38 +128,78 @@ header {
 
 header.lateral-menu-is-open {
   /* translate to show the lateral menu */
-  -webkit-transform: translateX(-220px);
-  -moz-transform: translateX(-220px);
-  -ms-transform: translateX(-220px);
-  -o-transform: translateX(-220px);
-  transform: translateX(-220px);
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px);
+}
+
+
+
+/*************************************************************/
+/*Content*/
+/*************************************************************/
+
+.section0 {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.section0 p {
+  font-family: 'Pacifico', cursive;
+  font-size: 10vh;
+  position: relative;
+  z-index: 150;
+  margin: 0 auto;
+  width: 80%;
+  color: #ffffff;
+  padding-top: 30vh;
+}
+
+.section {
+  margin: 0;
+  padding: 40px 0px 0px 0px;
+  width: 100%;
+  position: relative;
+  z-index: 200;
+  background-color: #ffffff;
+}
+
+.section:last-child{
+  padding-bottom: 40px;
 }
 
 .content{
-	width: 50%;
-	margin: 0 auto;
-	text-align: justify;
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+
 } 
 
-.section {
-	margin: 0;
-	padding: 100px 0px;
-	width: 100%;
-	position: relative;
-	z-index: 200;
+.add {
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 600;
+  color: #6C8AA5; 
 }
 
-/*************************************************************/
-/*Header*/
-/*************************************************************/
-/*
-.menuicon {
-	color: #6C8AA5;
-	float: right;
-	width: 5%;
-	margin: 0 auto;
-	font-size: 28px;
-}*/
+.add p {
+  float: left;
+  margin-right: 40px;perspective:
+}
+
+.add i {
+  margin-right: 5px;
+}
+
+footer {
+  margin: 0;
+  padding: 40px 0;
+  background-color: #6C8AA5;
+  width: 100%;
+  color: #ffffff;
+}
 
 /*************************************************************/
 /*Navigation*/
@@ -263,7 +303,7 @@ header.lateral-menu-is-open {
   visibility: hidden;
   /* the secondary navigation is covered by the main element */
   z-index: 1;
-  width: 220px;
+  width: 260px;
   background-color: #2A3540;
   overflow-y: auto;
   /* Force Hardware Acceleration in WebKit */
@@ -379,56 +419,6 @@ header.lateral-menu-is-open {
 ol, ul {
     list-style: none;
 }
-/*
-nav {
-	width: 100%;
-	background-color: rgba(255, 255, 255, 1);
-	position: fixed;
-	z-index: 100;
-	top: 0px;
-	left: 0px;
-	border-bottom: 4px solid #6C8AA5;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 20px 5%;
-	padding: 25px 0;
-}
-
-nav li {
-	display: inline;
-	text-align: center;
-}
-
-nav a {
-	display: inline-block;
-	padding: 0px 10px;
-	text-decoration: none;
-    color: #6C8AA5;
-	font-family: Raleway;
-    font-weight: 700;
-}
-
-nav a:first-child {
-}
-
-nav a:last-child {
-}*/
-
-
-/*************************************************************/
-/*Content*/
-/*************************************************************/
-
-.section0 {
-	height: 100vh;
-}
-
-.section1 {
-	background-color: #ffffff;
-
-}
 
 
 /*************************************************************/
@@ -452,6 +442,10 @@ nav a:last-child {
 @media screen and (max-width: 600px) {
 
 
+  .content, .add {
+    width: 80%;
+  }
+
 }
 
 
@@ -471,5 +465,7 @@ nav a:last-child {
 	.cbp-spmenu-right {
 		right: -190px;
 	}
+
+
 }
 

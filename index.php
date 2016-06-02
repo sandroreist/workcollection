@@ -4,6 +4,8 @@
 	<head>
         <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic' rel='stylesheet' type='text/css'>
         
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
         <meta charset="UTF-8">
         <meta name="description" content="Sandro Reist Workbook">
 
@@ -11,7 +13,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <!--<script src="https://use.fontawesome.com/37612a3f69.js"></script>-->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">-->
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
         <!--<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
@@ -45,68 +48,100 @@
     <main class="cd-main-content">
 
       <div class="section0">
+        <p>You're Welcome!</p>
       </div>
 
-      <div class="section section1">
+      <div class="section">
         <div class="content">
           <h1>Sandro Reist</h1>
           <p>Ich heisse Sandro und bin Mediamatiker im ZEM. Dies soll mein eigenes Wordpress-Template werden, da ich sowieso mal ein eigenes machen möchte. Cool. </p>
         </div>
+        <div class="add clearfix">
+          <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>Date</p>
+          <p class="category"><i class="fa fa-tags" aria-hidden="true"></i>Category Tags</p>
+        </div>
+      </div> 
+
+      <div class="section">
+        <div class="content">
+          <h1>Sandro Reist</h1>
+          <p>Ich heisse Sandro und bin Mediamatiker im ZEM. Dies soll mein eigenes Wordpress-Template werden, da ich sowieso mal ein eigenes machen möchte. Cool. </p>
+        </div>
+        <div class="add clearfix">
+          <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>Date</p>
+          <p class="category"><i class="fa fa-tags" aria-hidden="true"></i>Category Tags</p>
+        </div>
       </div>
 
+      <div class="section">
+        <div class="content">
+          <h1>Sandro Reist</h1>
+          <p>Ich heisse Sandro und bin Mediamatiker im ZEM. Dies soll mein eigenes Wordpress-Template werden, da ich sowieso mal ein eigenes machen möchte. Cool. </p>
+        </div>
+        <div class="add clearfix">
+          <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>Date</p>
+          <p class="category"><i class="fa fa-tags" aria-hidden="true"></i>Category Tags</p>
+        </div>
+      </div>
+
+
     </main>
+
+    <footer class="cd-main-content">
+      <div class="content">
+        <p>Dies ist der Footer.</p>
+      </div>
+    </footer>
       
-        <nav id="cd-lateral-nav">
-          <ul class="cd-navigation">
-            <li class="item-has-children">
-              <a href="#0">Services</a>
-              <ul class="sub-menu">
-                <li><a href="#0">Brand</a></li>
-                <li><a href="#0">Web Apps</a></li>
-                <li><a href="#0">Mobile Apps</a></li>
-              </ul>
-            </li> <!-- item-has-children -->
+    <nav id="cd-lateral-nav">
+      <ul class="cd-navigation">
+        <li class="item-has-children">
+          <a href="#0">Web</a>
+          <ul class="sub-menu">
+            <li><a href="#0">Systeme</a></li>
+            <li><a href="#0">Mediendatenbank</a></li>
+            <li><a href="#0">CMS</a></li>
+            <li><a href="#0">Code</a></li>
+            <li><a href="#0">Datensicherheit</a></li>
+            <li><a href="#0">Gestaltung</a></li>
+            <li><a href="#0">Links - Web</a></li>
+          </ul>
+        </li> <!-- item-has-children -->
 
-            <li class="item-has-children">
-              <a href="#0">Products</a>
-              <ul class="sub-menu">
-                <li><a href="#0">Product 1</a></li>
-                <li><a href="#0">Product 2</a></li>
-                <li><a href="#0">Product 3</a></li>
-                <li><a href="#0">Product 4</a></li>
-                <li><a href="#0">Product 5</a></li>
-              </ul>
-            </li> <!-- item-has-children -->
+        <li class="item-has-children">
+          <a href="#0">Design</a>
+          <ul class="sub-menu">
+            <li><a href="#0">Links - Design</a></li>
+          </ul>
+        </li> <!-- item-has-children -->
 
-            <li class="item-has-children">
-              <a href="#0">Stockists</a>
-              <ul class="sub-menu">
-                <li><a href="#0">London</a></li>
-                <li><a href="#0">New York</a></li>
-                <li><a href="#0">Milan</a></li>
-                <li><a href="#0">Paris</a></li>
-              </ul>
-            </li> <!-- item-has-children -->
-          </ul> <!-- cd-navigation -->
+        <li class="item-has-children">
+          <a href="#0">Administration</a>
+          <ul class="sub-menu">
+            <li><a href="#0">Projektmanagement</a></li>
+            <li><a href="#0">Links - Administration</a></li>
+          </ul>
+        </li> <!-- item-has-children -->
+      </ul> <!-- cd-navigation -->
 
-          <!--
-          <ul class="cd-navigation cd-single-item-wrapper">
-            <li><a href="#0">Tour</a></li>
-            <li><a href="#0">Login</a></li>
-            <li><a href="#0">Register</a></li>
-            <li><a href="#0">Pricing</a></li>
-            <li><a href="#0">Support</a></li>
-          </ul> --> <!-- cd-single-item-wrapper -->
+      <!--
+      <ul class="cd-navigation cd-single-item-wrapper">
+        <li><a href="#0">Tour</a></li>
+        <li><a href="#0">Login</a></li>
+        <li><a href="#0">Register</a></li>
+        <li><a href="#0">Pricing</a></li>
+        <li><a href="#0">Support</a></li>
+      </ul> --> <!-- cd-single-item-wrapper -->
 
-          <!--<ul class="cd-navigation cd-single-item-wrapper">
-            <li><a class="current" href="#0">Journal</a></li>
-            <li><a href="#0">FAQ</a></li>
-            <li><a href="#0">Terms &amp; Conditions</a></li>
-            <li><a href="#0">Careers</a></li>
-            <li><a href="#0">Students</a></li>
-          </ul> --> <!-- cd-single-item-wrapper -->
+      <!--<ul class="cd-navigation cd-single-item-wrapper">
+        <li><a class="current" href="#0">Journal</a></li>
+        <li><a href="#0">FAQ</a></li>
+        <li><a href="#0">Terms &amp; Conditions</a></li>
+        <li><a href="#0">Careers</a></li>
+        <li><a href="#0">Students</a></li>
+      </ul> --> <!-- cd-single-item-wrapper -->
 
-        </nav>
+    </nav>
 
 	</body>
 </html>
