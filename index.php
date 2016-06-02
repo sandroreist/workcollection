@@ -89,7 +89,7 @@
 
     <footer class="cd-main-content">
       <div class="content">
-        <p>Dies ist der Footer.</p>
+        <p>Sandro Reist&copy; - Lernender im Zentrum elektronische Medien</p>
       </div>
     </footer>
       
