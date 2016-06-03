@@ -1,3 +1,12 @@
+/* 
+Theme Name: workcollection
+Theme URI: localhost:8888/workbook/wp-content/themes/workcollection;
+Description: Eine Sammlung der von Sandro Reist gelernten Sachen während der Mediamatiker-Ausbildung im ZEM, 2016 
+Author: Sandro Reist
+Author URI: 
+Version: GitHub versioniert */
+
+
 /* Tipps zu HTML Tags
 
 	section		Abschnitt der Webseite
@@ -71,7 +80,7 @@ body {
 }
 
 main {
-	background: url(../img/bg.jpg) no-repeat center center fixed; 
+	background: url(img/bg.jpg) no-repeat center center fixed; 
  	 -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -204,6 +213,27 @@ footer {
 footer p {
   text-align: center;
 }
+
+/*************************************************************/
+/*Wordpress*/
+/*************************************************************/
+
+h1 a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: #6C8AA5; 
+  text-decoration: none;
+}
+
+.add a {
+  font-weight: 600;
+  color: #6C8AA5; 
+  text-decoration: none;
+}
+
+/*Navigation*/
+
 
 /*************************************************************/
 /*Navigation*/
@@ -395,7 +425,7 @@ footer p {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 1em;
-  background: url("../img/cd-arrow.svg") no-repeat center center;
+  background: url("img/cd-arrow.svg") no-repeat center center;
   background-size: 8px 11px;
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
@@ -423,6 +453,11 @@ footer p {
 ol, ul {
     list-style: none;
 }
+
+/*************************************************************/
+/*Navigation in Wordpress*/
+/*************************************************************/
+
 
 
 /*************************************************************/
