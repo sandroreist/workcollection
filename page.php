@@ -17,6 +17,7 @@
       <div class="section">
         <div class="content">
         
+          <?php if (has_post_thumbnail()) { ?> <figure class="postimage"><?php the_post_thumbnail();?></figure> <?php }?>
 
         <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 

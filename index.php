@@ -7,6 +7,8 @@
         <p>You're Welcome!</p>
       </div>
 
+      <?php get_search_form();?>
+
       <?php
 
       while(have_posts()) {
@@ -15,20 +17,21 @@
         ?>
 
       <div class="section">
-        <div class="content">
-        
+          <div class="content">
 
-        <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+          <?php if (has_post_thumbnail()) { ?> <figure class="postimage"><?php the_post_thumbnail();?></figure> <?php }?>
 
-        <?php the_content(); ?>
+            <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+
+            <?php the_content(); ?>
+          </div>
+          <div class="add clearfix">
+            <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i><?php the_date(); ?></p>
+            <p class="category"><i class="fa fa-tags" aria-hidden="true"></i><?php the_category( ', ' ); ?></p>
+          </div>
       </div>
-        <div class="add clearfix">
-          <p class="date"><i class="fa fa-clock-o" aria-hidden="true"></i><?php the_date(); ?></p>
-          <p class="category"><i class="fa fa-tags" aria-hidden="true"></i><?php the_category( ', ' ); ?></p>
-        </div>
-      </div> 
 
-        <?php
+      <?php
       }
       ?>
       <!--
